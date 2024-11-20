@@ -9,12 +9,12 @@ interface Employee {
 }
 export const employees: Employee[] = [
     {
-        firstName: "John",
-        lastName: "Doe",
-        age: 30,
-        phone: "1234567890",
+        firstName: "Nailah",
+        lastName: "Anastasya",
+        age: 17,
+        phone: "085850462071",
         address: "123 Main St",
-        email: "john.doe@github.com",
+        email: "nailah4nastasya.28@gmail.com",
         verified: true,
     },
     {

@@ -1,6 +1,6 @@
 import React from "react";
 
-export type ColumnDefs = {
+export type ColumnDefs<T> = {
     title: string;
 } & (
         | {
@@ -11,12 +11,12 @@ export type ColumnDefs = {
         }
     );
 
-const Table = ({
+const Table = <T extends Record<string, any>>({
     columnDefs,
     data,
 }: {
-    columnDefs: ColumnDefs[];
-    data: Record<string, any>[];
+    columnDefs: ColumnDefs<T>[];
+    data: T[];
 }) => {
     return (
         <table className="min-w-full divide-y overflow-hidden rounded-lg divide-gray-800 shadow-lg">
